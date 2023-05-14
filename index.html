@@ -1,61 +1,186 @@
 <!DOCTYPE html>
 <html>
-<h1> THE VOICE</h1>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+</head>
+<style>
+
+*{
+   padding:0;
+   margin:0;
+   text-decoration:none;
+   list-style:none;
+   box-sizing:border-box;
+  }
+  body{
+  background:#2c3e50;
+     font-family:monsterrat;
+    }
+	article {
+  float: right;
+  color:white;
+ 
+ }
+nav{
+    background: #0082e6;
+    height: 80px;
+    widith:100%;
+}
+  label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height:80px;
+	margin:0 5px;
+}
+nav ul li a{
+   color:white;
+   font-size:17px;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+   }
+  a.active,a:hover{
+   background:#1b9bff;
+  
+}
+.checkbtn{
+  font-size:30px;
+  color:white;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  }
+  #check{
+    display:none;
+	}
+	@media (max-width:952px){
+	  label.logo{
+	  font-size:30px;
+	  padding-left:50px;
+	  }
+	  nav ul li a{
+	  font-size;16px;
+	  }
+}
+@media (max-width:858px){
+    .checkbtn{
+   display: block;	
+  }
+  ul{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background:#2c3e50;
+  top:80px;
+  left:-100%;
+  text-align :center;
+  transition:all .5s;
+}
+nav ul li{
+  display:block;
+  margin:50px;
+  line-height:30px;
+  }
+  
+  nav ul li a{
+  font-size:20px;
+  }
+  
+  a:hover,a.active{
+  background:none;
+  color:#0082e6;
+  }
+  #check:checked ~ ul{
+  left:0;
+  }
+  }
+ /* Style the footer */
+footer {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #0082e6;
+  padding: 2px;
+  text-align:center;
+  color: white;
+} 
+.footer-bottom{
+width:100vw;
+padding:0px 0;
+text-align:center;
+}
+.footer-bottom span{
+text-transform: uppercase;
+opacity:.4;
+}
+</style>	
 <body>
-<P>This is a social platform where different kinds of people interact and express their deep dark thoughts,without being judged or feel any kind of oppression.
-This platform called the voice was created by a young lady miss faith mkandawire in the year 2018.
-Miss faith created the "THE VOICE" after encountering that many young stars are being shut-down to express their deep feelings.
-</P>
-<h2>MAIN GOAL</h2>
-<P>
-Our main goal is to curve or rather end mental health issues that comes in when ones voice is being shutted.
-</p>
-<h3>AREA OF FOCUS</h3>
-<ol>
-     <li> stress and anxiaty</li>
-     <li>rape cases</li>
-     <li>mental health </li>
-	 <li>dissabilities</li>
-</ol>
-<h4> DOCUMENTARIES</h4>
-<img src ="yoo.jpg"alt="man" width="200" height="200">
-<img src ="rrr.jpg"alt="woman"width="200"height="200">
-<img src ="bbr.jpg"alt="quotes">
-<h4>contact details</h4>
-<ol>
-      <li> whatsapp :+265 992606668</li>
-	  <li> facebook:THE VOICE</li>
-</ol>	  
-	  
-<p><a href = "../index.html"> Visit TheVoice.com!</a></p>
+<nav>
+    <input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+	<i class="fas fa-bars"></i>
+	</label>
+    <label class="logo">FAITH MKANDAWIRE</label>
+	<ul>
+	 <li><a class="active" href="#">Home </a></li>
+	  <li><a href="about.html">about </a></li>
+	   <li><a href="services.html">services</a></li>
+	   <li><a href="project.html">project</a></li>
+</ul>
+</nav>
+<section>
+ <img src="fai.jpg" alt="girl" width="410"height="300">
+  
+  <article>
+    <h1><b>PROFILE</b></h1><br><br>
+	
+    <p>Am FAITH MKANDAWIRE aged 23,pursuing Bachelors at Mzuzu University.I am the most pasionate female sgraphics desigher by profession <br>and also a content creator.</p>
+    <p>Being a female who has specialised in ict sure is very interesting to the whole world. </p>
+	<p>As a web developer i create softwares and websites that help both individuals aswell as companies.</p>
+	
+  </article>
+</section>	
+<div style="float:left; width: 700px; height:350px;  margin-left:0px;color:white; background:#2c3e50;">
+<h3><b>Featured project and tools used</b></h3><br>
+<h3>THE VOICE</h3><br>
+<p>The VOICE being one of my recent project, i as a web developer i have used <br>tool like wordpress.in wordpress we do embed any type of media  file on the pages content area.
+   There is no limit on the number of pages ,posts etc.</p>
+   
+   <p>Some of the technologies that i as web designer has used or that i use on dairy basis includes: BROWSERS and HTML $ CSS  just to mention a few.</p>
+<img src="rrr.jpg" alt="girl" width="332"height="300">
+</div>
 
-<table style="width: 50%;">
-      <tr>
-          <th>DATA RECORDS</th>
-          
-          
-      </tr>
-      <tr>
-          <td>MENTAL HEALTH CASES</td>
-          <td>3000</td>
-          
-      </tr>
-      <tr>
-          <td>STRESS AND ANXIATY CASES</td>
-          <td>5000</td>
-          
-      </tr>
-      <style>
-            table, th, td{
-                border: solid black;
-                border-collapse: collapse;
-                
-            }
-            .topnav{
-                font-size: 35px;
-            }
+<footer class="footer-content">
 
-        </style>
+<p> for information visit my social links kudos!!</p>
 
+
+	 <h4>My portfilio</h4>
+	 <div class="social-links">
+	 <a href="#"><i class="fab fa-facebook-f"></i></a>
+	 <a href="#"><i class="fab fa-twitter"></i></a>
+	 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+	 <a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+<div class= " footer-bottom">
+ <p>copyright&copy;2023 myportfolio. designed by <span>faith mkandawire</span></p>
+	  </div>
+</footer>	
+ 
 </body>
-</html>	 
+</html>
